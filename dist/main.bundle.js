@@ -100,7 +100,7 @@
   
   /***/ }),
   
-  /***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
+  /***/ './node_modules/style-loader/dist/runtime/styleTagTransform.js':
   /*!*********************************************************************!*\
     !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
     \*********************************************************************/
@@ -110,13 +110,13 @@
   
   /***/ }),
   
-  /***/ "./src/index.js":
+  /***/ './src/index.js':
   /*!**********************!*\
     !*** ./src/index.js ***!
     \**********************/
   /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
   
-  eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\nconst tasks = [\n    {\n      description: \"Wash Dishes\",\n      completed: false,\n      index: 1,\n    },\n    {\n      description: \"Complete To Do List Project\",\n      completed: false,\n      index: 2,\n    },\n    {\n      description: \"Task 3\",\n      completed: false,\n      index: 3,\n    },\n  ];\n  \n  function renderTaskList() {\n    const taskList = document.getElementById(\"task-list\");\n    taskList.innerHTML = \"\";\n    tasks.forEach((task) => {\n      const listItem = document.createElement(\"li\");\n  \n      const checkbox = document.createElement(\"input\");\n      checkbox.type = \"checkbox\";\n      checkbox.checked = task.completed;\n      checkbox.addEventListener(\"change\", (event) => {\n        task.completed = event.target.checked;\n        checkAllCompleted();\n      });\n      listItem.appendChild(checkbox);\n  \n      const description = document.createElement(\"span\");\n      description.innerText = task.description;\n      if (task.completed) {\n        description.classList.add(\"completed\");\n      }\n      listItem.appendChild(description);\n  \n      taskList.appendChild(listItem);\n    });\n  }  \n  \n  function checkAllCompleted() {\n    const allCompleted = tasks.every((task) => task.completed);\n    const clearAllButton = document.getElementById(\"clear-all\");\n    clearAllButton.disabled = !allCompleted;\n  }\n  \n  renderTaskList();\n  checkAllCompleted();\n  \n\n//# sourceURL=webpack://setup-webpack/./src/index.js?");
+  eval('__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\nconst tasks = [\n    {\n      description: \"Wash Dishes\",\n      completed: false,\n      index: 1,\n    },\n    {\n      description: \"Complete To Do List Project\",\n      completed: false,\n      index: 2,\n    },\n    {\n      description: \"Task 3\",\n      completed: false,\n      index: 3,\n    },\n  ];\n  \n  function renderTaskList() {\n    const taskList = document.getElementById(\"task-list\");\n    taskList.innerHTML = \"\";\n    tasks.forEach((task) => {\n      const listItem = document.createElement(\"li\");\n  \n      const checkbox = document.createElement(\"input\");\n      checkbox.type = \"checkbox\";\n      checkbox.checked = task.completed;\n      checkbox.addEventListener(\"change\", (event) => {\n        task.completed = event.target.checked;\n        checkAllCompleted();\n      });\n      listItem.appendChild(checkbox);\n  \n      const description = document.createElement(\"span\");\n      description.innerText = task.description;\n      if (task.completed) {\n        description.classList.add(\"completed\");\n      }\n      listItem.appendChild(description);\n  \n      taskList.appendChild(listItem);\n    });\n  }  \n  \n  function checkAllCompleted() {\n    const allCompleted = tasks.every((task) => task.completed);\n    const clearAllButton = document.getElementById(\"clear-all\");\n    clearAllButton.disabled = !allCompleted;\n  }\n  \n  renderTaskList();\n  checkAllCompleted();\n  \n\n//# sourceURL=webpack://setup-webpack/./src/index.js?');
   
   /***/ })
   
@@ -197,7 +197,7 @@
   /******/ 	// startup
   /******/ 	// Load entry module and return exports
   /******/ 	// This entry module can't be inlined because the eval devtool is used.
-  /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+  /******/ 	var __webpack_exports__ = __webpack_require__('./src/index.js');
   /******/ 	
   /******/ })()
   ;
